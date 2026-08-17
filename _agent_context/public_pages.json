@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "hundepension",
+      "type": "custom",
+      "entity": "buchungsanfragen",
+      "title": "Buchungsanfrage — Hundepension",
+      "published": true,
+      "fields": [
+        "interessent_vorname",
+        "interessent_nachname",
+        "interessent_telefon",
+        "interessent_email",
+        "hund_name",
+        "hund_rasse",
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "nachricht",
+        "eingangsdatum"
+      ]
+    }
+  ]
+}

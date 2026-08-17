@@ -1,0 +1,26 @@
+{
+  "slug": "buchungsanfrage",
+  "component": "Buchungsanfrage",
+  "title": "Buchungsanfrage — PfotePension",
+  "endpoints": [
+    {
+      "entity": "buchungsanfragen",
+      "op": "create",
+      "fields": [
+        "interessent_vorname",
+        "interessent_nachname",
+        "interessent_telefon",
+        "interessent_email",
+        "hund_name",
+        "hund_rasse",
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "nachricht"
+      ],
+      "preset_fields": {
+        "status": "offen",
+        "eingangsdatum": "today()"
+      }
+    }
+  ]
+}

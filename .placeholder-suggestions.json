@@ -1,0 +1,48 @@
+{
+  "BesitzerDialog.tsx": {
+    "vorname": "z. B. Max",
+    "nachname": "z. B. Müller",
+    "telefon": "z. B. 0157-1234567",
+    "email": "z. B. max@example.com",
+    "strasse": "z. B. Hauptstraße",
+    "hausnummer": "z. B. 42",
+    "plz": "z. B. 10115",
+    "ort": "z. B. Berlin",
+    "notizen": "Besonderheiten, Allergien, Abholzeiten..."
+  },
+  "HundeDialog.tsx": {
+    "name": "z. B. Buddy",
+    "rasse": "z. B. Labrador",
+    "geburtsdatum": "Wann wurde der Hund geboren?",
+    "geschlecht": "Wähle das Geschlecht",
+    "gewicht_kg": "z. B. 28",
+    "impfstatus": "Wähle den Impfstatus",
+    "fuetterungshinweise": "Fütterungszeiten, Allergien, Portionsgröße...",
+    "medikamente_besonderheiten": "Medikamente, Verhaltensbesonderheiten, Fütterung...",
+    "besitzer": "Welcher Besitzer?"
+  },
+  "AufenthalteDialog.tsx": {
+    "hund": "Welcher Hund kommt?",
+    "besitzer": "Besitzer der Anfrage",
+    "platznummer": "Welcher Platz?",
+    "anreisedatum": "Wann kommt der Hund an?",
+    "abreisedatum": "Wann reist der Hund ab?",
+    "status": "Wähle den Status",
+    "herkunft": "Direkt oder aus Anfrage?",
+    "preis_euro": "z. B. 234,50",
+    "notizen": "Besondere Wünsche, Verhalten, Fütterung..."
+  },
+  "BuchungsanfragenDialog.tsx": {
+    "interessent_vorname": "z. B. Anna",
+    "interessent_nachname": "z. B. Schmidt",
+    "interessent_telefon": "z. B. 0176-9876543",
+    "interessent_email": "z. B. anna@example.com",
+    "hund_name": "z. B. Bella",
+    "hund_rasse": "z. B. Dachshund",
+    "wunsch_anreise": "Gewünschtes Anreisedatum",
+    "wunsch_abreise": "Gewünschtes Abreisedatum",
+    "nachricht": "Spezielle Wünsche, Notizen, Allergien...",
+    "status": "Wähle den Status",
+    "eingangsdatum": "Wann kam die Anfrage ein?"
+  }
+}

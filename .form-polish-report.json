@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Besitzer": {
+      "placeholders_set": 9,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontakt, Adresse). Keine Preisfelder, keine numerischen Beziehungen, keine Lookup-Preis-Targets."
+    },
+    "Hunde": {
+      "placeholders_set": 9,
+      "defaults_keys": ["impfstatus"],
+      "computed_keys": [],
+      "reason": "Tier-Steckbrief: Name, Rasse, Datum, Gewicht, Impfstatus, Notizen. Gewicht ist nicht berechenbar; applookup (Besitzer) hat keinen Preis-Target. Kein geom berechenbarer Inhalt."
+    },
+    "Aufenthalte": {
+      "placeholders_set": 9,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": ["_aufenthalt_dauer_nächte"],
+      "reason": "Buchungs-Entity mit Datumspaar (anreise/abreise) → virtuelle Dauer-Berechnung (dateDiff). Kein Zimmer/Satz-Entity mit applookup-Preis vorhanden; preis_euro bleibt manuell eingegeben, bis Backend die Preis-Stammdaten liefert."
+    },
+    "Buchungsanfragen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["eingangsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Eingangserfassung für Anfragen (Interessent, Hund, Wunsch-Termine, Status). Keine Preise, keine Nummern-Aggregate. Status und Eingangsdatum mit sinnvollen Defaults vorbefüllt."
+    }
+  }
+}
