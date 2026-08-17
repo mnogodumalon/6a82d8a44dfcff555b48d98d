@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconCalendarPlus, IconClipboardCheck } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -42,6 +43,8 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/neue-buchung', label: { de: 'Neue Buchung', en: 'New booking' }, icon: IconCalendarPlus, description: 'Buchung in 3 Schritten anlegen: Besitzer, Hund und Aufenthalt' },
+  { path: '/intents/anfrage-bearbeiten', label: { de: 'Anfrage bearbeiten', en: 'Process inquiry' }, icon: IconClipboardCheck, description: 'Offene Buchungsanfrage prüfen und bestätigen oder ablehnen' },
   // </custom:intents>
 ];
 
@@ -52,4 +55,4 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;

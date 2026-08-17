@@ -51,16 +51,16 @@ const EMPTY_FORM: FormState = {
 
 // ─── Step helpers ─────────────────────────────────────────────────────────────
 
-const STEPS = [
+// ─── Main component ───────────────────────────────────────────────────────────
+
+export default function Hundepension() {
+  const STEPS = [
   tx('Kontaktdaten'),
   tx('Hundeinfo'),
   tx('Zeitraum'),
   tx('Absenden'),
 ] as const;
 
-// ─── Main component ───────────────────────────────────────────────────────────
-
-export default function Hundepension() {
   const [cfg, setCfg] = useState<PublicPagesConfig | null>(null);
   const [page, setPage] = useState<PublicPageConfig | null>(null);
   const [loading, setLoading] = useState(true);
@@ -95,7 +95,7 @@ export default function Hundepension() {
   if (unavailable || !cfg || !page) return <PublicShell unavailable />;
 
   // ── endpoint ──
-  const ep = page.endpoints.find(e => e.op === 'create');
+  const ep = page.endpoints!.find(e => e.op === 'create');
 
   function prepareOnce() {
     if (challengePrepared.current || !ep) return;
