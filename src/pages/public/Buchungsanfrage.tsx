@@ -121,7 +121,7 @@ export default function Buchungsanfrage() {
     challengePrepared.current = true;
     const ep = page.endpoints?.find(e => e.op === 'create');
     if (ep?.app_id) {
-      prepareChallenge(cfg, page, 'POST', `/apps/${ep.app_id}/records`).catch(() => {});
+      void prepareChallenge(cfg, page, 'POST', `/apps/${ep.app_id}/records`);
     }
   }
 
@@ -387,7 +387,7 @@ export default function Buchungsanfrage() {
                         type="email"
                         value={form.interessent_email}
                         onChange={e => set('interessent_email', e.target.value)}
-                        placeholder="max@beispiel.de"
+                        placeholder={tx('max@beispiel.de')}
                         className={`w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 transition ${errors.interessent_email ? 'border-red-400 bg-red-50' : 'border-gray-300'}`}
                       />
                       <FieldError msg={errors.interessent_email} />
