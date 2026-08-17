@@ -19,6 +19,9 @@ import AufenthalteDetailPage from '@/pages/AufenthalteDetailPage';
 import BuchungsanfragenPage from '@/pages/BuchungsanfragenPage';
 import BuchungsanfragenDetailPage from '@/pages/BuchungsanfragenDetailPage';
 // <custom:imports>
+const IntentNeueBuchungPage = lazy(() => import('@/pages/intents/NeueBuchungPage'));
+const IntentAnfrageBestaetigenPage = lazy(() => import('@/pages/intents/AnfrageBestaetigenPage'));
+const IntentPfotenPortraetPage = lazy(() => import('@/pages/intents/PfotenPortraetPage'));
 // </custom:imports>
 
 // Lazy: public pages live outside <Layout> and only load on /#/public/:slug —
@@ -69,6 +72,9 @@ export default function App() {
                 <Route path="admin" element={<AdminPage />} />
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 {/* <custom:routes> */}
+                <Route path="intents/neue-buchung" element={<Suspense fallback={null}><IntentNeueBuchungPage /></Suspense>} />
+                <Route path="intents/anfrage-bestaetigen" element={<Suspense fallback={null}><IntentAnfrageBestaetigenPage /></Suspense>} />
+                <Route path="intents/pfoten-portraet" element={<Suspense fallback={null}><IntentPfotenPortraetPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
