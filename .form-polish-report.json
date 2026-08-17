@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Besitzer": {
+      "placeholders_set": 9,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontaktinformationen, Adresse), keine Berechnung sinnvoll"
+    },
+    "Hunde": {
+      "placeholders_set": 9,
+      "defaults_keys": ["impfstatus"],
+      "computed_keys": [],
+      "reason": "Tierstammdaten, ein number-Feld (Gewicht) ist reine Eingabe, keine Berechnung sinnvoll"
+    },
+    "Aufenthalte": {
+      "placeholders_set": 9,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": ["_aufenthalts_dauer_nächte"],
+      "reason": "Buchungs-Entity mit Datumspaar (anreise/abreise) und Preis — virtuelle Dauer-Berechnung als Aufenthalts-Übersicht; ohne applookup mit Tagespreis im Schema keine automatische Preisberechnung"
+    },
+    "Buchungsanfragen": {
+      "placeholders_set": 10,
+      "defaults_keys": ["eingangsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Lead-Erfassungsformular mit Interessent und Hund-Freitext, keine Number-Felder zur Berechnung"
+    }
+  }
+}

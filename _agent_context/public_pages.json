@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "buchungsanfrage",
+      "type": "custom",
+      "entity": "buchungsanfragen",
+      "title": "Buchungsanfrage — PfotePension",
+      "published": true,
+      "fields": [
+        "interessent_vorname",
+        "interessent_nachname",
+        "interessent_telefon",
+        "interessent_email",
+        "hund_name",
+        "hund_rasse",
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "nachricht"
+      ]
+    }
+  ]
+}

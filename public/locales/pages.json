@@ -1,0 +1,38 @@
+{
+  "pages": {
+    "en": {
+      " — Wunschanreise {0}": " — Requested arrival {0}",
+      "Abreise": "Departure",
+      "Anfragen": "Requests",
+      "Anreise": "Arrival",
+      "Aufenthalt angepasst": "Stay adjusted",
+      "Aufenthalt verschoben": "Stay rescheduled",
+      "Auschecken": "Check Out",
+      "Belegt": "Occupied",
+      "Bestätigen": "Confirm",
+      "Einchecken": "Check In",
+      "Frei": "Available",
+      "Heute ab": "Departing Today",
+      "Heute an": "Arriving Today",
+      "Heute keine An- oder Abreisen — ruhiger Tag!": "No arrivals or departures today — quiet day!",
+      "Heute sind keine An- oder Abreisen geplant.": "No arrivals or departures scheduled today.",
+      "Heute — An & Abreisen": "Today — Arrivals & Departures",
+      "Jetzt bestätigen": "Confirm Now",
+      "Keine offenen Anfragen — alles bearbeitet.": "No open requests — all handled.",
+      "Neue Buchung": "New Booking",
+      "Offene Anfragen": "Open Requests",
+      "Platz bereits belegt in diesem Zeitraum": "Spot already occupied in this period",
+      "Unbekannt": "Unknown",
+      "haben unverbindliche Anfragen gestellt": "have submitted non-binding requests",
+      "hat eine unverbindliche Anfrage gestellt": "has submitted a non-binding request",
+      "{0} Hunde sind aktuell in der Pension.": "{0} dogs are currently boarding.",
+      "{0} reisen ab": "{0} departing today",
+      "{0} reisen heute an": "{0} arriving today",
+      "{0} — Anfrage abgelehnt": "{0} — request declined",
+      "{0} — Anfrage bestätigt": "{0} — request confirmed",
+      "{0} — ausgecheckt": "{0} — checked out",
+      "{0} — eingecheckt": "{0} — checked in"
+    }
+  },
+  "v": 1
+}
