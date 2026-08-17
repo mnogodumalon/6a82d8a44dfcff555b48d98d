@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "en": {
+      "Abreise": "Departure",
+      "Anfrage erfassen": "Log Request",
+      "Anfrage von {0} {1} — bestätigt": "Request from {0} {1} — confirmed",
+      "Anfrage von {0} — abgelehnt": "Request from {0} — declined",
+      "Anreise": "Arrival",
+      "Aufenthalt verschoben": "Stay rescheduled",
+      "Aufenthaltsdauer geändert": "Stay duration changed",
+      "Belegt": "Occupied",
+      "Bestätigen": "Confirm",
+      "Bestätigen & Aufenthalt anlegen": "Confirm & Create Stay",
+      "Buchungsanfragen": "Booking Requests",
+      "Frei heute": "Available Today",
+      "Heute": "Today",
+      "Heute Abreise": "Departing Today",
+      "Heute Anreise": "Arriving Today",
+      "Heute keine An- oder Abreisen": "No arrivals or departures today",
+      "Heute keine Gäste — ein ruhiger Tag.": "No guests today — a quiet day.",
+      "Jetzt bestätigen": "Confirm Now",
+      "Keine offenen Buchungsanfragen": "No open booking requests",
+      "Läuft ab!": "Expiring!",
+      "Neue Buchung": "New Booking",
+      "Offene Anfragen": "Open Requests",
+      "Platz bereits belegt in diesem Zeitraum": "Slot already occupied in this period",
+      "Unbekannt": "Unknown",
+      "Unbekannter Hund": "Unknown Dog",
+      "reisen heute ab": "departing today",
+      "reisen heute an": "arriving today",
+      "reist heute ab": "departing today",
+      "reist heute an": "arriving today",
+      "{0} Hunde zu Gast — heute keine Bewegungen.": "{0} dogs staying — no movements today.",
+      "{0} reisen an, {1} reisen ab.": "{0} arriving, {1} departing.",
+      "{0} — ausgecheckt": "{0} — checked out",
+      "{0} — eingecheckt": "{0} — checked in",
+      "— Buchungsanfrage läuft bald ab. Jetzt reagieren!": "— Booking request expiring soon. Respond now!",
+      "— Buchungsanfragen laufen bald ab. Jetzt reagieren!": "— Booking requests expiring soon. Respond now!"
+    }
+  },
+  "v": 1
+}

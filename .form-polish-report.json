@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Besitzer": {
+      "placeholders_set": 8,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity (Text, Adresse). Keine berechenbaren Werte, keine Datums-Paare, keine Lookup-Chains mit Preisen."
+    },
+    "Hunde": {
+      "placeholders_set": 9,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Tierdaten-Stammsatz (Name, Rasse, Gewicht, Impfstatus, Besitzer-Link). Keine Berechnungen; Gewicht ist Rohwert, kein berechenbarer Eintrag."
+    },
+    "Aufenthalte": {
+      "placeholders_set": 9,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": ["_aufenthalte_dauer_nächte"],
+      "reason": "Buchungs-Entity mit Datumspaar (Anreise/Abreise). Dauer-Berechnung via dateDiff für Dialog-Übersicht. Preis wird manuell eingegeben (keine applookup mit Tagespreis-Target vorhanden). Status standardmäßig auf 'Geplant' vorbelegelt."
+    },
+    "Buchungsanfragen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["eingangsdatum", "status"],
+      "computed_keys": ["_buchungsanfrage_wunsch_dauer_nächte"],
+      "reason": "Anfrage-Entity mit Wunsch-Datumspaar (Wunsch-Anreise/Abreise). Dauer-Berechnung zeigt dem Bearbeiter, wie lange der Hund bleiben soll. Status standardmäßig 'Offen', Eingangsdatum auf heute gesetzt."
+    }
+  }
+}
